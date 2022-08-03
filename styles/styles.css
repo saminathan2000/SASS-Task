@@ -1,0 +1,98 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.readGartner {
+  border-radius: 40px;
+  background-color: #58D68D;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px 10px 30px;
+}
+
+.fortifyImg {
+  margin-top: 5%;
+  display: block;
+}
+
+.rightSection {
+  width: 50%;
+  display: none;
+}
+
+.fortifyImg2 {
+  width: 90%;
+  padding: 5%;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  width: 60%;
+}
+
+.logo {
+  height: 25%;
+  width: 25%;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+section {
+  width: 720px;
+  margin: auto;
+  margin-left: 1%;
+}
+
+@media screen and (max-width: 639px) {
+  section {
+    width: auto;
+    margin: auto;
+    padding-top: 1%;
+  }
+  .fortifyImg {
+    display: block;
+    width: 100%;
+    height: 40vh;
+  }
+  .rightSection {
+    display: none;
+  }
+  .leftSection {
+    align-items: center;
+    width: 100%;
+  }
+  .leftSection p {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 960px) {
+  .rightSection {
+    display: block;
+  }
+  .fortifyImg {
+    display: none;
+  }
+  .leftSection {
+    width: 50%;
+  }
+  section {
+    width: 936px;
+    margin: auto;
+    padding-top: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 1140px;
+    margin: auto;
+    padding-top: 15%;
+  }
+}/*# sourceMappingURL=styles.css.map */
