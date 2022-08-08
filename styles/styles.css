@@ -12,6 +12,10 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 30px 10px 30px;
+  border: 0px;
+}
+.readGartner:hover {
+  cursor: pointer;
 }
 .readGartner span {
   font-family: Arial, Helvetica, sans-serif;
@@ -43,7 +47,7 @@ body {
   font-size: 22px;
 }
 .leftSection p {
-  font-weight: 400;
+  font-size: 16px;
 }
 
 .logo {
@@ -55,14 +59,19 @@ body {
   width: 100%;
 }
 
-section {
+.container {
   width: 720px;
   margin: auto;
   margin-left: 10px;
 }
 
+section {
+  width: 100%;
+  margin: 0px;
+}
+
 @media screen and (max-width: 639px) {
-  section {
+  .container {
     width: auto;
     margin: auto;
     padding-top: 10px;
@@ -99,9 +108,9 @@ section {
   }
   .leftSection p {
     margin: 0 0 25 0;
-    font-size: 12;
+    font-size: 16px;
   }
-  section {
+  .container {
     width: 936px;
     margin: auto;
     padding-top: 150px;
@@ -111,7 +120,7 @@ section {
   }
 }
 @media screen and (min-width: 1200px) {
-  section {
+  .container {
     width: 1140px;
     margin: auto;
     padding-top: 150px;
@@ -121,7 +130,7 @@ section {
   }
   .leftSection p {
     margin: 0 0 25 0;
-    font-size: 12;
+    font-size: 16px;
   }
   .logo {
     width: 120px;

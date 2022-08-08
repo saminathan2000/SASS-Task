@@ -2,31 +2,31 @@ body {
     background-color: #000;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .readGartner {
+}
+.readGartner {
     border-radius: 40px;
     background-color: #58D68D;
     color: #fff;
     width: fit-content;
     padding: 10px 30px 10px 30px;
+    border: 0px;
+    &:hover {
+        cursor: pointer;
+    }
     span{
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
     }
-  }
-
+}
 .fortifyImg{
     margin-top: 15px;
     display: block;
     width: 100%;
 }
-
 .rightSection{
     width: 50%;
     display: none;
 }
-
 .fortifyImg2{
     width: 90%;
     padding: 15px;
@@ -39,7 +39,8 @@ body {
         font-size: 22px;
     }
     p{
-        font-weight: 400;
+        font-size: 16px;
+        //font-weight: 400;
     }
 }
 .logo{
@@ -50,16 +51,19 @@ body {
     width: 100%;
 }
 //default code is for tablet portrait
-section{
+.container{
     width: 720px;
     margin: auto;
     margin-left: 10px;
 }
 
-
-
-@media screen and (max-width: 639px)  {  //mobile
-    section{
+section{
+    width: 100%;
+    margin: 0px;
+}
+//mobile
+@media screen and (max-width: 639px)  {  
+    .container{
         width: auto;
         margin: auto;
         padding-top: 10px;
@@ -83,9 +87,8 @@ section{
     }
     
 }
-
-
-@media screen and (min-width: 960px){  //tablet landscape
+//tablet landscape
+@media screen and (min-width: 960px){  
     .rightSection{
         display: block;
     }
@@ -99,10 +102,10 @@ section{
         }
         p{
             margin: 0 0 25 0;
-            font-size: 12;
+            font-size: 16px;
         }
     }
-    section{
+    .container{
         width: 936px;
         margin: auto;
         padding-top: 150px;
@@ -111,9 +114,9 @@ section{
         width: 120px;
     }
 }
-
-@media screen and (min-width:1200px){ //desktop
-    section{
+//desktop
+@media screen and (min-width:1200px){ 
+    .container{
         width: 1140px;
         margin: auto;
         padding-top: 150px;
@@ -124,7 +127,7 @@ section{
         }
         p{
             margin: 0 0 25 0;
-            font-size: 12;
+            font-size: 16px;
         }
     }
     .logo{
